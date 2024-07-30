@@ -16,6 +16,17 @@
             align-items: center;
             height: 100vh;
         }
+        body::after {
+            content: "";
+            background: url('thousand-islands-lake.jpg') no-repeat center center/cover;
+            opacity: 0.5; /* Adjust the opacity to your preference */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            z-index: -1; /* Ensure the image is behind the content */
+        }
         .container {
             text-align: center;
             padding: 20px;
